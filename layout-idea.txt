@@ -1,0 +1,88 @@
+Desktop
+-- Logo - Horiz Menu
+-- Big Picture (css animation of items)
+-- Welcome text + bullets / sign up form
+-- icon grid - 12 icons
+-- News Items in 3 columns
+-- Footer
+
+Table
+
+-- Logo - Hamburger
+-- Medium Picture
+-- icon grid - 6 icons
+-- icon grid - 6 icons
+-- News Items in 3 columns
+-- Footer
+
+Mobile
+
+-- Logo - Hamburger
+-- Small Picture
+-- Welcome Text
+-- Sign Up form
+-- News Item (text) is hidden
+-- News Item (text) is hidden
+-- News Item (text) is hidden
+-- Footer
+
+
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+
+  </style>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="header__logo">
+	</div>
+	<div class="header__navigation">
+		<ul>
+			<li>Home</li>
+			<li>company</li>
+			<li>Services</li>
+			<li>Products</li>
+			<li>Careers</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+</div>
+<!-- Backdrop Phone -->
+<div class="">
+
+</div>
+<!-- Welcome & Sign Up -->
+<div class="">
+	<div class=""></div>
+</div>
+
+<!-- Products & Services -->
+<div class="products-services">
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+</div>
+
+<!-- News -->
+<div class="news">
+	<div class="news__item">
+		<h3></h3>
+	</div>
+	<div class=""></div>
+	<div class=""></div>
+</div>
+</body>
+</html>
