@@ -124,10 +124,48 @@ welcome__signup__group:focus welcome__signup__label {
     flex: 1 1 33%;
 }
 
-.news__item__header {
+.news__item__header, .products-services__header {
     margin: 0;
 }
 
 .products-services {
-    background-color: #b7b6b6;
+    background-color: #fff;
+}
+
+.products-services__intro {
+    padding: 20px 20px;
+}
+
+.products-services__matrix {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 1 25%;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.product__img img {
+    max-width: 100px;
+}
+
+.product__name {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #57585a;
+}
+
+.product__link {
+    background-color: #46a651;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
 }
