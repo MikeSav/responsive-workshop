@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "custom-grid"
+  "defaultProject": "custom-grid",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

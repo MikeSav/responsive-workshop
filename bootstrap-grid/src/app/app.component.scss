@@ -1,19 +1,34 @@
+/*
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
 .header {
-  // display: flex;
   background-color: black;
   border-bottom: 1px solid white;
   align-items: center;
+  margin: 0;
 }
 
 .header__logo {
-  // flex: 0 1 30%;
   padding: 10px 20px;
+
 }
 
 .header__navigation {
-  // flex: 1 1 auto;
-  // align-items: flex-end;
   padding: 10px 20px;
+  text-align: right;
 }
 
 .menu {
@@ -21,29 +36,27 @@
   padding: 0;
   color: white;
   list-style: none;
-  display: flex;
-}
-
-.menu__item {
-  flex: 1 1 auto;
+  justify-content: flex-end;
 }
 
 .header__hamburger {
-  // display: none;
+  text-align: right;
+  color: #fff;
+  font-size: 40px;
+  padding-right: 20px;
 }
 
 .welcome {
-  display: flex;
   background-image: url('/assets/images/backdrop-green.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 300px;
   border-bottom: 5px solid #ebebeb;
+  margin: 0;
 }
 
 .welcome__intro {
-  flex: 1 1 50%;
   padding: 20px 20px;
 }
 
@@ -52,10 +65,9 @@
 }
 
 .welcome__signup {
-  flex: 1 1 50%;
   border: 1px solid #00a94e;
   border-radius: 5px;
-  margin: 20px 20px;
+  margin: 20px 0px;
   padding: 20px 20px;
   background: #fff;
 }
@@ -127,12 +139,11 @@
 }
 
 .news__intro {
-  display: flex;
   padding: 20px 20px;
 }
 
 .news__items {
-  display: flex;
+  margin: 0;
 }
 
 .news__intro__header {
@@ -141,7 +152,7 @@
 
 .news__item {
   padding: 20px 20px;
-  flex: 1 1 33%;
+  margin: 0;
 }
 
 .news__item__header, .products-services__header, .signup__header {
@@ -157,12 +168,10 @@
 }
 
 .products-services__matrix {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0;
 }
 
 .product {
-  flex: 1 1 calc(25% - 20px);
   border: 1px solid #ebebeb;
   background: #fff;
   padding: 20px;
