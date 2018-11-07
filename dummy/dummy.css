@@ -36,11 +36,6 @@
 }
 
 .header__hamburger {
-    color: white;
-    display: none;
-}
-
-input[type=checkbox] + label {
     display: none;
 }
 
@@ -51,7 +46,7 @@ input[type=checkbox] + label {
     background-size: cover;
     background-position: center center;
     height: 300px;
-    border: 1px solid #ebebeb;
+    border-bottom: 5px solid #ebebeb;
 }
 
 .welcome__intro {
@@ -174,7 +169,7 @@ input[type=checkbox] + label {
 }
 
 .product {
-    flex: 1 1 23%;
+    flex: 1 1 calc(25% - 20px);
     border: 1px solid #ebebeb;
     background: #fff;
     padding: 20px;
@@ -188,8 +183,10 @@ input[type=checkbox] + label {
     max-height: 150px;
 }
 
+/* ToDo - Give a class name...*/
 .product__img img {
     max-width: 100px;
+    max-height: 120px;
 }
 
 .product__name {
@@ -238,6 +235,11 @@ input[type=checkbox] + label {
 
     .news__items {
         flex-direction: column;
+
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 20px);
     }
 
     .welcome {

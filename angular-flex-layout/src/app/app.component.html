@@ -1,20 +1,110 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<body>
+<!-- header -->
+<div class="header">
+  <div class="header__logo"
+       fxFlex="0 1 30%">
+    <img src="./assets/images/brand-logo.png">
+  </div>
+  <div class="header__hamburger"
+       fxFlex="1 1 auto"
+       fxShow.gt-sm="false"
+       fxLayoutAlign="end center">
+    &#9776;
+  </div>
+  <div class="header__navigation"
+       fxFlex="1 1 auto"
+       fxShow.lt-md="false">
+    <ul class="menu">
+      <li class="menu__item" fxFlex>Home</li>
+      <li class="menu__item" fxFlex>Company</li>
+      <li class="menu__item" fxFlex>Services</li>
+      <li class="menu__item" fxFlex>Products</li>
+      <li class="menu__item" fxFlex>Careers</li>
+      <li class="menu__item" fxFlex>Contact</li>
+    </ul>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Welcome & Sign Up -->
+<div class="welcome" fxLayout.lt-md="column">
+  <div class="welcome__intro"
+       fxFlex="1 1 50%">
+    <h2 class="welcome__header">Welcome to MSA Responsive</h2>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend maximus felis, a porta risus
+    suscipit eu. Phasellus blandit a lorem et vehicula.
+  </div>
+  <div class="welcome__signup" fxFlex="1 1 50%;">
+    <div class="signup__intro">
+      <h3 class="signup__header">Sign up to our newsletter</h3>
+    </div>
+    <div class="welcome__signup__group">
+      <input class="welcome__signup__input" id="name" required>
+      <label class="welcome__signup__label" for="name">Your Name</label>
+    </div>
 
+    <div class="welcome__signup__group">
+      <input class="welcome__signup__input" id="email" required>
+      <label class="welcome__signup__label" for="email">Your Email</label>
+    </div>
+  </div>
+</div>
+
+<!-- Products & Services -->
+<div class="products-services">
+  <div class="products-services__intro">
+    <h2 class="products-services__header">Check out some of our products</h2>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around">
+    <!-- products to go here -->
+    <div *ngFor="let product of productArray"
+         class="product"
+         fxFlex="1 1 calc(25% - 20px)"
+         fxFlex.lt-md="1 1 calc(50% - 20px)">
+      <div class="product__img">
+        <img src="{{product.img}}">
+      </div>
+      <div class="product__name">{{product.productName}}</div>
+      <div>
+        <a href="/" class="product__link">see more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- News -->
+<div class="news">
+  <div class="news__intro">
+    <h2 class="news__intro__header">What's happening at MSA</h2>
+  </div>
+  <div class="news__items" fxLayout.lt-md="column">
+    <div class="news__item" fxFlex="1 1 33%">
+      <h3 class="news__item__header">New Item 1</h3>
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend maximus felis, a porta risus
+        suscipit eu. Phasellus blandit a lorem et vehicula. Sed a pharetra augue, non accumsan justo. Nullam
+        commodo
+        consectetur iaculis. Sed faucibus eu quam a pellentesque. Fusce pretium vulputate risus, quis congue
+        ante
+        dapibus eget. Curabitur faucibus sollicitudin magna quis placerat.
+      </div>
+    </div>
+    <div class="news__item" fxFlex="1 1 33%">
+      <h3 class="news__item__header">New Item 2</h3>
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend maximus felis, a porta risus
+        suscipit eu. Phasellus blandit a lorem et vehicula. Sed a pharetra augue, non accumsan justo. Nullam
+        commodo
+        consectetur iaculis. Sed faucibus eu quam a pellentesque. Fusce pretium vulputate risus, quis congue
+        ante
+        dapibus eget. Curabitur faucibus sollicitudin magna quis placerat.
+      </div>
+    </div>
+    <div class="news__item" fxFlex="1 1 33%">
+      <h3 class="news__item__header">New Item 3</h3>
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend maximus felis, a porta risus
+        suscipit eu. Phasellus blandit a lorem et vehicula. Sed a pharetra augue, non accumsan justo. Nullam
+        commodo
+        consectetur iaculis. Sed faucibus eu quam a pellentesque. Fusce pretium vulputate risus, quis congue
+        ante
+        dapibus eget. Curabitur faucibus sollicitudin magna quis placerat.
+      </div>
+    </div>
+  </div>
+</div>
