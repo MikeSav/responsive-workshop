@@ -6,7 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css', './app.component.sm.css']
 })
 export class AppComponent {
-
   productArray: any[] = [
     {productName: 'AirGo SCBA', img: './assets/images/airgo-scba.jpeg'},
     {productName: 'A1 Belt', img: './assets/images/belt1.jpeg'},
@@ -21,5 +20,4 @@ export class AppComponent {
     {productName: 'Scout 2000', img: './assets/images/scout1.jpeg'},
     {productName: 'Scout 3000', img: './assets/images/scout2.jpeg'}
   ];
-
 }

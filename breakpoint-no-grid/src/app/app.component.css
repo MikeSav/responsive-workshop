@@ -1,0 +1,200 @@
+.header {
+  display: flex;
+  background-color: black;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 0 1 30%;
+  padding: 10px 20px;
+}
+
+.header__navigation {
+  flex: 1 1 auto;
+  align-items: flex-end;
+  padding: 10px 20px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style: none;
+  display: flex;
+}
+
+.menu__item {
+  flex: 1 1 auto;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  background-image: url('/assets/images/backdrop-green.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  border-bottom: 5px solid #ebebeb;
+}
+
+.welcome__intro {
+  flex: 1 1 50%;
+  padding: 20px 20px;
+}
+
+.welcome__header {
+  margin: 0;
+}
+
+.welcome__signup {
+  flex: 1 1 50%;
+  border: 1px solid #00a94e;
+  border-radius: 5px;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  background: #fff;
+}
+
+.welcome__signup__group {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  position: relative;
+  display: block;
+  color: #000000;
+  padding: 25px 0 10px 0;
+}
+
+.welcome__signup__group::after {
+  content: "\00A0";
+  display: block;
+  color: #00a94e;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.welcome__signup__group .welcome__signup__label {
+  position: absolute;
+  display: block;
+  top: 35px;
+  left: 0px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  pointer-events: none;
+  cursor: text;
+}
+
+.welcome__signup__group input {
+  padding: 10px 0 10px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  outline: none;
+}
+
+.welcome__signup__group input:invalid {
+  outline: none;
+  box-shadow: none;
+}
+
+.welcome__signup__group input:valid ~ .welcome__signup__label, .welcome__signup__group input:focus ~ .welcome__signup__label {
+  top: 10px;
+  font-size: 12px;
+}
+
+.welcome__signup__group input:focus {
+  outline: none;
+  color: #000000;
+  padding-bottom: 8px;
+  border-bottom-width: 3px;
+  border-bottom-color: #00a94e;
+}
+
+.welcome__signup__group input:focus ~ .welcome__signup__label {
+  color: #00a94e;
+}
+
+.news {
+  background-color: #e9e9e9;
+}
+
+.news__intro {
+  display: flex;
+  padding: 20px 20px;
+}
+
+.news__items {
+  display: flex;
+}
+
+.news__intro__header {
+  margin: 0;
+}
+
+.news__item {
+  padding: 20px 20px;
+  flex: 1 1 33%;
+}
+
+.news__item__header, .products-services__header, .signup__header {
+  margin: 0;
+}
+
+.products-services {
+  background-color: #fff;
+}
+
+.products-services__intro {
+  padding: 20px 20px;
+}
+
+.products-services__matrix {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 calc(25% - 20px);
+  border: 1px solid #ebebeb;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.product__img {
+  height: 150px;
+  max-height: 150px;
+}
+
+/* ToDo - Give a class name...*/
+.product__img img {
+  max-width: 100px;
+  max-height: 120px;
+}
+
+.product__name {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #57585a;
+  padding-bottom: 10px;
+}
+
+.product__link {
+  background-color: #46a651;
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: capitalize;
+}
