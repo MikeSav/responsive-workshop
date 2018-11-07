@@ -1,18 +1,15 @@
 .header {
-  display: flex;
+  /* display: flex; */
   background-color: black;
   border-bottom: 1px solid white;
   align-items: center;
 }
 
 .header__logo {
-  flex: 0 1 30%;
   padding: 10px 20px;
 }
 
 .header__navigation {
-  flex: 1 1 auto;
-  align-items: flex-end;
   padding: 10px 20px;
 }
 
@@ -21,19 +18,20 @@
   padding: 0;
   color: white;
   list-style: none;
-  display: flex;
 }
 
 .menu__item {
-  flex: 1 1 auto;
+
 }
 
 .header__hamburger {
-  display: none;
+  color: white;
+  text-align: right;
+  font-size: 40px;
+  padding-right: 20px;
 }
 
 .welcome {
-  display: flex;
   background-image: url('/assets/images/backdrop-green.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +41,6 @@
 }
 
 .welcome__intro {
-  flex: 1 1 50%;
   padding: 20px 20px;
 }
 
@@ -52,7 +49,6 @@
 }
 
 .welcome__signup {
-  flex: 1 1 50%;
   border: 1px solid #00a94e;
   border-radius: 5px;
   margin: 20px 20px;
@@ -127,12 +123,10 @@
 }
 
 .news__intro {
-  display: flex;
-  padding: 20px 20px;
+  padding: 20px 10px 0px 10px;
 }
 
 .news__items {
-  display: flex;
 }
 
 .news__intro__header {
@@ -141,7 +135,6 @@
 
 .news__item {
   padding: 20px 20px;
-  flex: 1 1 33%;
 }
 
 .news__item__header, .products-services__header, .signup__header {
@@ -157,17 +150,15 @@
 }
 
 .products-services__matrix {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .product {
-  flex: 1 1 calc(25% - 20px);
   border: 1px solid #ebebeb;
   background: #fff;
   padding: 20px;
   text-align: center;
-  margin: 10px;
+  margin-bottom: 10px;
   box-sizing: border-box;
 }
 
