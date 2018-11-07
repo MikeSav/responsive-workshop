@@ -1,18 +1,18 @@
 .header {
-  display: flex;
+  // display: flex;
   background-color: black;
   border-bottom: 1px solid white;
   align-items: center;
 }
 
 .header__logo {
-  flex: 0 1 30%;
+  // flex: 0 1 30%;
   padding: 10px 20px;
 }
 
 .header__navigation {
-  flex: 1 1 auto;
-  align-items: flex-end;
+  // flex: 1 1 auto;
+  // align-items: flex-end;
   padding: 10px 20px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .header__hamburger {
-  display: none;
+  // display: none;
 }
 
 .welcome {
